@@ -12,10 +12,15 @@ public class SumOfEvenAndOdd{
 		int number = input.nextInt();
 
 		if(number %2 == 0)
-			evenNumber = number ;
-			evenNumber++ ;
+			evenNumber = evenNumber+number ;
+			System.out.println("evenNumber: " + evenNumber);
+		if(number %2 == 1)
+			oddNumber = oddNumber+number ;
+			System.out.println("oddNumber: " + oddNumber);
+			
 	}	
-		System.out.print(evenNumber);
+		System.out.println("The total number of even: "+evenNumber);
+		System.out.println("The total number of odd: "+oddNumber);
 
 }
 
